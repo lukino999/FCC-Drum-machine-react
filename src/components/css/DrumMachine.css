@@ -1,0 +1,7 @@
+.drum-machine__container {
+  background-color: #444;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  border-radius: 3%;
+}
