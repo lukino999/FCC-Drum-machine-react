@@ -1,5 +1,5 @@
 # Drum machine
-<!-- ## [Live on Github Pages](https://lukino999.github.io/FCC-Drum-machine-react/) -->
+## [Live on Github Pages](https://lukino999.github.io/FCC-Drum-machine-react/)
 <hr>
 <hr>
 
