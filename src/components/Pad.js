@@ -3,10 +3,10 @@ import mapping from './mapping/mapping';
 
 
 export default class Pad extends React.Component {
-
+  
   onPadClick = (e, k) => {
+    this.props.setDisplayText(this.props.map[1]);
     this.player.play();
-    
   }
 
   render() {

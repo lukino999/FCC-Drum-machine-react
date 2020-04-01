@@ -11,6 +11,7 @@ class Pads extends React.Component {
         <Pad
           key={m[0]}
           map={m}
+          setDisplayText={this.props.setDisplayText}
         />
       )
     });
