@@ -4,24 +4,26 @@ import DrumMachine from './DrumMachine';
 
 export default class App extends React.Component {
 
+  state = {keypress: ''};
+
   onKeyPress = e => {
-    console.log('e', e);
+    this.setState({keypress: e.key.toUpperCase()});
   }
 
   componentDidMount() {
     document.body.classList.add('body');
     document.querySelector('#root').classList.add('fill-parent');
-    document.addEventListener('keypress', this.onKeyPress);
+    document.addEventListener('keydown', this.onKeyPress);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('keypress', this.onKeyPress);
+    document.removeEventListener('keydown', this.onKeyPress);
   }
 
   render() {
     return (
       <div className='fill-parent'>
-        <DrumMachine />
+        <DrumMachine keypress={this.state.keypress}/>
       </div>
     )
   }

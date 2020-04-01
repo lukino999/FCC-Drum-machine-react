@@ -9,6 +9,11 @@ export default class Pad extends React.Component {
     this.player.play();
   }
 
+  shouldComponentUpdate(next){
+    console.log('next', next);
+    return true;
+  }
+
   render() {
     const samplesFolder = process.env.PUBLIC_URL + '/samples/';
     const [k, sample] = this.props.map;

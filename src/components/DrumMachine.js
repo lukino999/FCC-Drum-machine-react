@@ -15,7 +15,10 @@ export default class DrumMachine extends React.Component {
     return (
       <div id='drum-machine' className='drum-machine__container'>
         <Display sample={this.state.sample}/>
-        <Pads setDisplayText={this.setDisplayText}/>
+        <Pads 
+          setDisplayText={this.setDisplayText}
+          keypress={this.props.keypress}
+        />
       </div>
     )
   }
