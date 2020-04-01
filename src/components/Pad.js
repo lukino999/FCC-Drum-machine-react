@@ -1,10 +1,11 @@
 import React from 'react'
-import mapping from './mapping/mapping';
 
 
 export default class Pad extends React.Component {
   onPadClick = (e, k) => {
     document.querySelector('#display').innerHTML = this.props.map[1];
+    this.player.pause();
+    this.player.currentTime = 0;
     this.player.play();
   }
 
