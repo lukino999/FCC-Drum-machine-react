@@ -3,26 +3,24 @@ import mapping from './mapping/mapping';
 import React from 'react';
 import Pad from './Pad';
 
-class Pads extends React.Component {
+const Pads = (props) => {
 
-  render() {
-    const pads = mapping.map(m => {
-      return (
-        <Pad
-          key={m[0]}
-          map={m}
-          keypress={this.props.keypress}
-        />
-      )
-    });
-
+  const renderPads = mapping.map(m => {
     return (
-      <div className='pads__container flex-center'>
-        {pads}
-      </div>
-    );
+      <Pad
+        key={m[0]}
+        map={m}
+        keypress={props.keypress}
+      />
+    )
+  });
 
-  }
+  return (
+    <div className='pads__container flex-center'>
+      {renderPads}
+    </div>
+  );
+
 }
 
 export default Pads;
