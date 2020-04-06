@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/FCC-Drum-machine-react/static/css/main.c1bea4d3.chunk.css",
-    "main.js": "/FCC-Drum-machine-react/static/js/main.1cbca66b.chunk.js",
-    "main.js.map": "/FCC-Drum-machine-react/static/js/main.1cbca66b.chunk.js.map",
+    "main.css": "/FCC-Drum-machine-react/static/css/main.e2ab15f5.chunk.css",
+    "main.js": "/FCC-Drum-machine-react/static/js/main.b8505ef1.chunk.js",
+    "main.js.map": "/FCC-Drum-machine-react/static/js/main.b8505ef1.chunk.js.map",
     "runtime-main.js": "/FCC-Drum-machine-react/static/js/runtime-main.feb2af54.js",
     "runtime-main.js.map": "/FCC-Drum-machine-react/static/js/runtime-main.feb2af54.js.map",
     "static/js/2.2b181b4b.chunk.js": "/FCC-Drum-machine-react/static/js/2.2b181b4b.chunk.js",
     "static/js/2.2b181b4b.chunk.js.map": "/FCC-Drum-machine-react/static/js/2.2b181b4b.chunk.js.map",
     "index.html": "/FCC-Drum-machine-react/index.html",
-    "precache-manifest.ea25607d595bf504b848e6e04b85204e.js": "/FCC-Drum-machine-react/precache-manifest.ea25607d595bf504b848e6e04b85204e.js",
+    "precache-manifest.293a17768235c87b1247680f4dd2f81c.js": "/FCC-Drum-machine-react/precache-manifest.293a17768235c87b1247680f4dd2f81c.js",
     "service-worker.js": "/FCC-Drum-machine-react/service-worker.js",
-    "static/css/main.c1bea4d3.chunk.css.map": "/FCC-Drum-machine-react/static/css/main.c1bea4d3.chunk.css.map",
+    "static/css/main.e2ab15f5.chunk.css.map": "/FCC-Drum-machine-react/static/css/main.e2ab15f5.chunk.css.map",
     "static/js/2.2b181b4b.chunk.js.LICENSE.txt": "/FCC-Drum-machine-react/static/js/2.2b181b4b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.feb2af54.js",
     "static/js/2.2b181b4b.chunk.js",
-    "static/css/main.c1bea4d3.chunk.css",
-    "static/js/main.1cbca66b.chunk.js"
+    "static/css/main.e2ab15f5.chunk.css",
+    "static/js/main.b8505ef1.chunk.js"
   ]
 }
