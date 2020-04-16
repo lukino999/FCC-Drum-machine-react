@@ -3,11 +3,24 @@ import React from 'react'
 
 export default class Pad extends React.Component {
   onPadClick = (e, k) => {
+    // display sample name
     this.props.displayRef.current.innerHTML = this.props.map[1];
+
+    //
+    this.resetAnimation();
 
     this.player.pause();
     this.player.currentTime = 0;
     this.player.play();
+  }
+
+
+  //
+  resetAnimation() {
+    this.padRef.classList.remove('bounceIn');
+    setTimeout(() => {
+      this.padRef.classList.add('bounceIn');
+    }, 1);
   }
 
   shouldComponentUpdate(next) {
@@ -28,7 +41,11 @@ export default class Pad extends React.Component {
         key={k}
         className='single-pad__container flex-center'
         onClick={(e) => { this.onPadClick(e, k) }}>
-        <div className='drum-pad flex-center' id={sample}>
+        <div
+          id={sample}
+          className='drum-pad flex-center bounceIn'
+          ref={ref => this.padRef = ref}
+        >
           <p>{k}</p>
           <audio
             src={samplesFolder + sample + '.wav'}

@@ -24,6 +24,22 @@
   background-color: darkgrey;
   border-radius: 10%;
   cursor: pointer;
+  animation-duration: .05s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+}
+
+.bounceIn {
+  animation-timing-function: ease-out;
+  animation-name: bounceIn;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
