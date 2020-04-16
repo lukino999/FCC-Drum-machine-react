@@ -3,7 +3,8 @@ import React from 'react'
 
 export default class Pad extends React.Component {
   onPadClick = (e, k) => {
-    document.querySelector('#display').innerHTML = this.props.map[1];
+    this.props.displayRef.current.innerHTML = this.props.map[1];
+
     this.player.pause();
     this.player.currentTime = 0;
     this.player.play();
@@ -11,7 +12,7 @@ export default class Pad extends React.Component {
 
   shouldComponentUpdate(next) {
     const id = this.props.map[0];
-    
+
     if (next.keypress === id) {
       this.onPadClick(null, id);
     }

@@ -8,6 +8,7 @@ const Pads = (props) => {
   const renderPads = mapping.map(m => {
     return (
       <Pad
+        displayRef={props.displayRef}
         key={m[0]}
         map={m}
         keypress={props.keypress}
