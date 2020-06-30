@@ -22,8 +22,12 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className='fill-parent'>
+      <div className='fill-parent top-margin'>
         <DrumMachine keypress={this.state.keypress} />
+        <footer>
+          FreeCodeCamp Drum Machine &copy;&nbsp;Luca&nbsp;M&nbsp;-&nbsp;
+        <a href='https://github.com/lukino999/FCC-Drum-machine-react' target='_blank'>source</a>
+        </footer>
       </div>
     )
   }
